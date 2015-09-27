@@ -7,24 +7,24 @@ read n
 if [ $n = 1 ]; then
 	echo 'Ingresa el nombre de usuario'
 	read user
-	echo 'Ingresa la contraseña'
-	read pssw
 	sudo useradd $user -d /home/escuela/alumnos/$user -m -g alumnos
-	sudo passwd $pssw
+	sudo passwd $user
+	cd /home/escuela/alumnos/
+	sudo chmod 705 $user
 fi
 if [ $n = 2 ]; then
 	echo 'Ingresa el nombre de usuario'
 	read user
-	echo 'Ingresa la contraseña'
-	read pssw
 	sudo useradd $user -d /home/escuela/profesores/$user -m -g profesores
-	sudo passwd $pssw
+	sudo passwd $user
+	cd /home/escuela/profesores/
+	sudo chmod 750 $user
 fi
 if [ $n = 3 ]; then
 	echo 'Ingresa el nombre de usuario'
 	read user
-	echo 'Ingresa la contraseña'
-	read pssw
 	sudo useradd $user -d /home/escuela/administrativos/$user -m -g administrativos
-	sudo passwd $pssw
+	sudo passwd $user
+	cd /home/escuela/administrativos/
+	sudo chmod 770 $user
 fi
