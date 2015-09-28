@@ -1,0 +1,12 @@
+#!/bin/bash
+cd /home/jorge/Documentos/
+echo 'Bash para crear una "escuela" con los siguentes grupos:'
+echo 'Administrativos, Profesores y Alumnos'
+echo '¿Qué proceso desea hacer?'
+echo '1.- Borrar todos los directorios y grupos'
+echo '2.- Crear todos los grupos y directorios de los grupos'
+echo '3.- Crear usuarios: alumnos, profesores, administrativos'
+read opc
+if [ $n = 1 ]; then
+
+sudo sh 
