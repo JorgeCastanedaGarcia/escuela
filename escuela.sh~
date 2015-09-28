@@ -1,8 +1,8 @@
 #!/bin/bash
-continuar=y
-while [ $continuar = y ]:
-do
-{
+#continuar=y
+#while [ $continuar = y ]:
+#do
+#{
 echo 'Que dessea hacer'
 echo '1- Crear un usuario alumno'
 echo '2- Crear un usuario profesor'
@@ -41,5 +41,5 @@ if [ $n = 3 ]; then
 	read opt
 	continuar = opt
 fi
-}
-done
+#}
+#done
